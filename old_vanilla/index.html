@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Echo - 마음을 울리는 메아리</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 메인 게임 렌더링 캔버스 -->
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- UI 오버레이 -->
+        <div id="ui-layer">
+            <div id="start-screen" class="screen active">
+                <h1 class="title">E C H O</h1>
+                <p class="subtitle">마음을 비우고 편안하게 화면을 터치하세요</p>
+                <div class="pulse-ring"></div>
+                <button id="start-btn">시작하기</button>
+            </div>
+            
+            <div id="hud-screen" class="screen">
+                <p id="level-indicator">Level 1</p>
+            </div>
+            
+            <div id="clear-screen" class="screen">
+                <h2 class="title" style="font-size: 2.5rem;">평온함을 찾았습니다</h2>
+                <p class="subtitle">모든 빛을 이었습니다</p>
+                <button id="next-level-btn">다음으로</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 오디오 엔진 및 게임 로직 (추후 추가) -->
+    <script src="game.js"></script>
+</body>
+</html>
